@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>OwO Tools</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <style media="screen">
+    body{ padding: 70px 20px; }
+    ul{ padding:0; margin: 0; list-style: none;border-left: 1px dotted gray; border-top: 1px dotted gray;}
+    ul#FRM_CONTAINER li{ padding: 10px; border-right: 1px dotted gray; border-bottom: 1px dotted gray;}
+    ul#FRM_CONTAINER li:nth-child(even){ background: #eee; }
+  </style>
+</head>
+
+  <body>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <!-- 모바일용 ? -->
+        <!-- <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+        </button> -->
+        <a class="navbar-brand">Swift Constructor Generator</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <!-- 클래스명 -->
+    <div class="row">
+      <input type="text" name="className" placeholder="클래스명" class="form-control" id="className">
+    </div>
+    <hr>
+    <div class="row">
+      <ul id="FRM_CONTAINER" class="clearfix"></ul>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-xs-12 col-sm-4"><button type="button" id="addBtn" class="btn btn-default btn-block">추가</button></div>
+      <div class="col-xs-12 col-sm-4"><button type="button" id="ad3Btn" class="btn btn-default btn-block">추가*3</button></div>
+      <div class="col-xs-12 col-sm-4"><button type="button" id="resBtn" class="btn btn-success btn-block">변환</button></div>
+    </div>
+
+  <hr>
+<pre id="resBox">
+class 클래스명 {
+
+}
+</pre>
+  </div>
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="./js/init.js"></script>
+
+  </body>
+</html>
